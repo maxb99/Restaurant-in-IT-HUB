@@ -16,6 +16,7 @@
 		69F9CC06219AC14600CE646D /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F9CC05219AC14600CE646D /* OrderTableViewController.swift */; };
 		69F9CC08219AC1D400CE646D /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F9CC07219AC1D400CE646D /* MenuItemDetailViewController.swift */; };
 		69F9CC0B219AC3BB00CE646D /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F9CC0A219AC3BB00CE646D /* MenuItem.swift */; };
+		69F9CC0E219ACC6A00CE646D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F9CC0D219ACC6A00CE646D /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		69F9CC05219AC14600CE646D /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		69F9CC07219AC1D400CE646D /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 		69F9CC0A219AC3BB00CE646D /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		69F9CC0D219ACC6A00CE646D /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,8 @@
 			children = (
 				69F5A487219AAFE700E3E0A6 /* AppDelegate.swift */,
 				69F5A48B219AAFE700E3E0A6 /* Main.storyboard */,
+				69F9CC0F219ACC8500CE646D /* Controllers */,
 				69F9CC0C219AC3CB00CE646D /* Model */,
-				69F9CC09219AC20000CE646D /* View Controllers */,
 				69F5A48E219AAFEA00E3E0A6 /* Assets.xcassets */,
 				69F5A490219AAFEA00E3E0A6 /* LaunchScreen.storyboard */,
 				69F5A493219AAFEA00E3E0A6 /* Info.plist */,
@@ -90,6 +92,15 @@
 				69F9CC0A219AC3BB00CE646D /* MenuItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		69F9CC0F219ACC8500CE646D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69F9CC0D219ACC6A00CE646D /* MenuController.swift */,
+				69F9CC09219AC20000CE646D /* View Controllers */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F9CC08219AC1D400CE646D /* MenuItemDetailViewController.swift in Sources */,
+				69F9CC0E219ACC6A00CE646D /* MenuController.swift in Sources */,
 				69F9CC06219AC14600CE646D /* OrderTableViewController.swift in Sources */,
 				69F5A488219AAFE700E3E0A6 /* AppDelegate.swift in Sources */,
 				69F9CC0B219AC3BB00CE646D /* MenuItem.swift in Sources */,
