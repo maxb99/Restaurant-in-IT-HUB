@@ -6,7 +6,7 @@
 //  Copyright © 2018 Denis Bystruev. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class MenuController {
     let baseURL = URL(string: "http://api.armenu.net:8090/")!
@@ -61,7 +61,38 @@ class MenuController {
                 return
             }
             
+            print(#function, menuItems.items)
+            
             completion(menuItems.items)
+        }
+         task.resume()
+    }
+    
+    func fetchImage(url: URL, completion: @escaping (UIImage?) -> Void) {
+       guard var components = URLComponents(url: url,
+        resolvingAgainstBaseURL: false
+        ) else {
+            completion(nil)
+            return
+        }
+        
+        components.host = baseURL.host
+        
+        guard let url = components.url else {
+            completion(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) {
+            data, response, error in
+            
+      guard let data = data else {
+               completion(nil)
+               return
+            }
+        
+            let image = UIImage(data: data)
+            completion(image)
         }
         task.resume()
     }
